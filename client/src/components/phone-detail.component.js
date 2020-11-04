@@ -65,23 +65,11 @@ export default class PhoneDetail extends Component {
             })
     }
 
-    onValueChange(e) {
-            this.setState({
-                selectedOption: e.target.value                                  
-            })         
-    }
+    onValueChange = e => this.setState({ selectedOption: e.target.value })   
 
-    onChangeUser(e) {
-        this.setState({
-            user: e.target.value
-        })
-    }
-
-    onChangeText(e) {
-        this.setState({
-            text: e.target.value
-        })
-    }
+    onChangeUser = e => this.setState({ user: e.target.value })
+    
+    onChangeText = e => this.setState({ text: e.target.value })
 
     onCommentSubmit(e) {
         e.preventDefault()
